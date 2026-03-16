@@ -1,7 +1,7 @@
 const config = require("./config.json");
 
 const mongoURI =
-  /* config.MONGODB_URI || */ "mongodb://localhost:27017" + "/collegeDetails";
+  config.MONGODB_URI || "mongodb://localhost:27017" + "/collegeDetails";
 
 let mongoose = require("mongoose");
 const { collegeSchema } = require("./schema");
